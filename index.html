@@ -1,0 +1,1663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="A Landing page that brings motivated individuals in small groups for deep conversation and honest feedback">
+    <link rel="preload" as="image" href="website_images/Image1.webp" type="image/webp">
+    <!-- This is the hero section image for mobile responsive screen which is a preload directive and it tells the browser before parsing the full HTML, start downloading this specific image immediately and its size is 400 x 474px-->
+    <link rel="preload" as="image" href="website_images/Image1-400.webp"
+        imagesrcset="website_images/Image1-400.webp 400w" type="image/webp" fetchpriority="high">
+
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </noscript>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        as="style" media="print" onload="this.onload=null;this.media='all'">
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+            rel="stylesheet">
+    </noscript>
+    <link rel="preload" as="font"
+        href="https://fonts.gstatic.com/s/playfairdisplay/v39/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2"
+        type="font/woff2" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <title>Alliatus Landing Page</title>
+</head>
+
+<body>
+    <style>
+        .pill-shape:last-child,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        ul,
+        ul li:last-child {
+            margin-bottom: 0
+        }
+
+        .card_collection,
+        .hero_content {
+            display: flex;
+            flex-direction: column
+        }
+
+        .image-position,
+        .work_cards,
+        .works_section {
+            position: relative
+        }
+
+        .alliatus_heading,
+        .host_content,
+        .people_text,
+        .price_card,
+        .price_plans {
+            text-align: center
+        }
+
+        .currency_style,
+        .feedback,
+        .heading1_style,
+        .num-text,
+        .step-style {
+            font-style: italic
+        }
+
+        .custom-accordion .accordion-header .accordion-btn-pad,
+        body {
+            padding: 0
+        }
+
+        body {
+            margin: 0;
+            box-sizing: border-box;
+            background-color: #f7f7f7
+        }
+
+        p {
+            font-size: 16px;
+            font-family: "Work Sans"
+        }
+
+        img {
+            width: 100%;
+            height: auto
+        }
+
+        .alliatus_size {
+            font-family: "Playfair Display", serif;
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        .btn,
+        .navbar-nav .nav-item {
+            font-family: "Work Sans";
+            font-size: 20px
+        }
+
+        .navbar-nav .nav-item {
+            line-height: 30px;
+            color: #303030
+        }
+
+        .btn:hover,
+        .btn_bg {
+            color: #fff
+        }
+
+        .btn {
+            border: 1px solid #49342f;
+            border-radius: 12px;
+            padding: 19px 40px
+        }
+
+        .btn-log {
+            border-radius: 12px;
+            border: 1px solid #49342f;
+            padding: 14px 43px;
+            background-color: #fff
+        }
+
+        .custom-navbar {
+            padding: 20px 50px
+        }
+
+        .banner-section {
+            margin-top: 25px;
+            padding: 0 50px;
+        }
+
+        .banner {
+            border: 1px solid #83838340;
+            border-radius: 40px;
+            background-color: #ffdd81;
+            padding: 75px 50px 50px
+        }
+
+        .hero_heading {
+            font-family: "Playfair Display", serif;
+            font-size: 64px;
+            padding-top: 50px;
+            font-weight: 400;
+        }
+
+        .alliatus_style,
+        .hero_style {
+            font-weight: 800;
+            font-style: italic;
+        }
+
+        .hero_text {
+            font-family: "Work Sans";
+            font-size: 22px;
+            line-height: 30px;
+            padding-top: 50px
+        }
+
+        .hero_buttons {
+            display: flex;
+            gap: 20px
+        }
+
+        .btn_bg {
+            background-color: #303030
+        }
+
+        .card1,
+        .work-card {
+            background-color: #fff
+        }
+
+        .hero_content {
+            height: 100%;
+            justify-content: space-between
+        }
+
+        .rating_content {
+            margin-top: 35px;
+            font-family: "Work Sans";
+            font-size: 16px
+        }
+
+        .rating {
+            font-weight: 600
+        }
+
+        .card-include,
+        .card-session,
+        .numbers_section,
+        .work-image {
+            margin-top: 40px
+        }
+
+        .list_group {
+            display: flex;
+            gap: 80px;
+            border: 1px solid #49342f;
+            padding: 24px 50px;
+            border-radius: 24px
+        }
+
+        .num_item {
+            font-family: "PlayFair Display", serif;
+            font-size: 40px;
+            font-weight: 800
+        }
+
+        .num_content {
+            font-family: "Work Sans";
+            padding-top: 8px;
+            max-width: 188px
+        }
+
+        .alliatus_para,
+        .alliatus_title,
+        .alliatus_topic {
+            font-family: "PlayFair Display", serif
+        }
+
+        .alliatus_title,
+        .work-heading {
+            max-width: 648px;
+            font-weight: 400
+        }
+
+        .alliatus_people,
+        .alliatus_section,
+        .facilitator_section,
+        .pricing_section,
+        .testimonial_section {
+            margin-top: 150px
+        }
+
+        .alliatus_topic {
+            font-size: 10px;
+            padding-bottom: 20px
+        }
+
+        .alliatus_title {
+            font-size: 64px;
+            margin: 0 auto
+        }
+
+        .accordion_margin,
+        .alliatus_padding,
+        .facilitator_cards,
+        .price_cards,
+        .you_cards {
+            margin-top: 70px
+        }
+
+        .alliatus_content {
+            margin-left: 16px
+        }
+
+        .alliatus_para {
+            font-size: 19px;
+            padding: 50px
+        }
+
+        .card_heading,
+        .for_style,
+        .include-style,
+        .testimonial_text,
+        .work_para {
+            font-family: "Work Sans"
+        }
+
+        .card_collection {
+            gap: 20px
+        }
+
+        .card1 {
+            border: 1px solid #fff;
+            border-radius: 24px;
+            padding: 50px
+        }
+
+        .card_heading {
+            font-size: 16px;
+            font-weight: 400
+        }
+
+        .card_content {
+            padding-top: 22px
+        }
+
+        .works_section {
+            margin-top: 115px
+        }
+
+        .alliatus_information {
+            padding-top: 15px
+        }
+
+        .num-text,
+        .work-heading {
+            font-family: "PlayFair Display", serif
+        }
+
+        .work-heading {
+            margin-top: 20px;
+            font-size: 64px
+        }
+
+        .heading1_style,
+        .step-style {
+            font-weight: 800
+        }
+
+        .work_cards {
+            margin-top: 70px
+        }
+
+        .work-card {
+            border: 1px solid #fff;
+            border-radius: 24px;
+            padding: 40px;
+            margin-top: 40px
+        }
+
+        .card-bg,
+        .price_card:hover {
+            background-color: #ffdd81
+        }
+
+        .work-card1 {
+            padding: 40px;
+            border-radius: 24px
+        }
+
+        .card-bg1 {
+            background-color: #fff
+        }
+
+        .card-bg2 {
+            background-color: #f7f7f7;
+            border: 1px solid #303030
+        }
+
+        .num-text {
+            font-size: 60px;
+            font-weight: 900
+        }
+
+        .card-topic {
+            font-family: "Work Sans";
+            padding-left: 15px
+        }
+
+        .card-desc {
+            max-width: 347px;
+            padding-bottom: 15px;
+            padding-top: 15px
+        }
+
+        .include-content {
+            padding-top: 30px;
+            padding-bottom: 40px
+        }
+
+        .bullet {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #303030;
+            margin-left: 8px;
+            margin-right: 8px
+        }
+
+        .pill-shape,
+        .price_card,
+        .testimonial_card {
+            background-color: #fff
+        }
+
+        .alliatus_images {
+            position: absolute;
+            top: 5px;
+            right: 150px
+        }
+
+        .work-videocalling {
+            max-height: 510px
+        }
+
+        .heading1 {
+            font-family: "PlayFair Display", serif;
+            font-size: 64px;
+            max-width: 562px;
+            margin: 0 auto;
+            font-weight: 400
+        }
+
+        .heading2,
+        .member_text {
+            font-family: "Playfair Display", serif;
+            font-weight: 400
+        }
+
+        .you_card {
+            border: 1px solid #49342f;
+            border-radius: 40px;
+            padding: 60px;
+            height: 924px
+        }
+
+        .heading2 {
+            font-size: 40px
+        }
+
+        .you_tips {
+            margin-top: 60px
+        }
+
+        .image_style {
+            margin-top: 9px
+        }
+
+        .card1_content,
+        .footer_btn,
+        .notyou_tips {
+            margin-top: 30px
+        }
+
+        .pill-shape {
+            border: 1px solid #000;
+            border-radius: 100px;
+            padding: 14px 24px;
+            width: 85%;
+            margin-bottom: 12px
+        }
+
+        .footer_icons,
+        .people-image,
+        .testimonial_author {
+            margin-top: 50px
+        }
+
+        .member_text {
+            font-size: 64px;
+            margin-top: 23px
+        }
+
+        .testimonial_card {
+            border-radius: 24px;
+            padding: 40px;
+            border: 1px solid;
+            margin-top: 24px
+        }
+
+        .testimonial_text1 {
+            font-size: 18px;
+            line-height: 27px;
+            font-family: "Work Sans"
+        }
+
+        .testimonial_author1 {
+            margin-top: 77px
+        }
+
+        .testimonial_author2 {
+            margin-top: 104px
+        }
+
+        .card-title,
+        .facilitator_name {
+            font-weight: 400;
+            font-size: 40px;
+            font-family: "PlayFair Display", serif
+        }
+
+        .facilitator_designation,
+        .footer_text1,
+        .linkedin-icon {
+            margin-top: 20px
+        }
+
+        .facilitator_content {
+            margin-top: 25px;
+            font-size: 18px;
+            line-height: 27px
+        }
+
+        .facilitator_cards>.facilitator_card:last-child,
+        .footer_icons .icon_bg:last-child {
+            margin-right: 0
+        }
+
+        .price_card {
+            border-radius: 40px;
+            padding: 55px 45px 75px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px
+        }
+
+        .price_card:hover {
+            cursor: pointer
+        }
+
+        .card-text {
+            margin-top: 10px
+        }
+
+        .currency {
+            margin-top: 5px;
+            font-family: "PlayFair Display", serif
+        }
+
+        .currency_style {
+            font-size: 50px;
+            font-weight: 800
+        }
+
+        .currency_text {
+            font-size: 30px;
+            font-weight: 400
+        }
+
+        .plan_items {
+            font-family: "Work Sans";
+            margin-top: 10px;
+            margin-bottom: 30px;
+            min-height: 200px
+        }
+
+        .alliatus_footer,
+        .faq_heading,
+        .footer_heading {
+            font-family: "PlayFair Display", serif
+        }
+
+        .footer_para1,
+        .plan_text {
+            font-size: 18px
+        }
+
+        .faq_section {
+            margin-top: 150px;
+            position: relative
+        }
+
+        .faq_heading {
+            font-size: 64px;
+            margin-top: 20px;
+            font-weight: 400;
+            max-width: 502px
+        }
+
+        .custom-accordion .accordion-btn-pad:focus {
+            box-shadow: none
+        }
+
+        .accordion-button:not(.collapsed) {
+            color: unset;
+            background-color: unset;
+            box-shadow: unset
+        }
+
+        .custom-accordion .accordion-item-bg:has(.accordion-collapse.show) {
+            background-color: #ffdd81
+        }
+
+        .custom-accordion .accordion-item-bg {
+            margin-bottom: 20px;
+            border: 1px solid #000;
+            border-radius: 24px;
+            padding: 40px 50px
+        }
+
+        .custom-accordion .accordion-gap {
+            padding: 25px 0 0;
+            font-size: 18px;
+            line-height: 27px;
+            max-width: 506px
+        }
+
+        .custom-accordion .accordion-btn-pad::after {
+            background-image: url("http://localhost/Alliatus-LandingPage/website_images/accordion_btn.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            transform: rotate(0);
+            width: 24px;
+            height: 24px;
+            content: "";
+            transition: transform .3s ease-in-out
+        }
+
+        .custom-accordion .accordion-btn-pad:not(.collapsed)::after {
+            transform: rotate(0)
+        }
+
+        .custom-accordion .accordion-btn-pad.collapsed::after {
+            transform: rotate(180deg) !important
+        }
+
+        .faq_image {
+            width: 40%;
+            position: absolute;
+            top: -5px;
+            right: 100px;
+            z-index: -1
+        }
+
+        .footer_section {
+            margin-top: 100px;
+            color: #fff;
+            padding: 0 50px
+        }
+
+        .footer_content {
+            border-radius: 40px;
+            border: 1px solid #000;
+            background-color: #000;
+            padding: 60px 50px
+        }
+
+        .alliatus_footer {
+            font-size: 40px;
+            font-weight: 700
+        }
+
+        .footer_items {
+            list-style: none;
+            padding-left: 0
+        }
+
+        .footer_text {
+            margin-top: 49px
+        }
+
+        .footer_items>li {
+            margin-bottom: 20px
+        }
+
+        .footer_icons .icon_bg {
+            display: inline-block;
+            margin-right: 20px;
+            color: #ffdd81;
+            width: 24px;
+            height: 24px
+        }
+
+        .footer_last {
+            margin-top: 74px
+        }
+
+        .text_style {
+            font-size: 18px;
+            line-height: 24px
+        }
+
+        .footer_card {
+            border-radius: 24px;
+            color: #000;
+            background-color: #ffdd81;
+            padding: 60px 50px;
+            position: relative
+        }
+
+        .footer_heading {
+            font-size: 40px;
+            font-weight: 400
+        }
+
+        .footer_para2 {
+            padding-top: 30px
+        }
+
+        .footer_img {
+            width: 30%;
+            position: absolute;
+            bottom: 25px;
+            right: 20px
+        }
+
+        @media only screen and (max-width:768px) {
+            .custom-navbar {
+                padding: 20px 15px
+            }
+
+            .hero_heading {
+                font-size: 40px;
+                font-family: "Playfair Display";
+            }
+
+            .hero_image {
+                width: 325px;
+                height: 385px;
+                object-fit: cover;
+                display: block;
+            }
+
+            .banner-section,
+            .footer_section {
+                padding: 0
+            }
+
+            .banner {
+                padding: 40px 20px 20px
+            }
+
+            .hero_bottom {
+                margin-top: 70px
+            }
+
+            .btn {
+                font-size: 20px;
+                height: 50px;
+                padding: 10px
+            }
+
+            .list_group {
+                flex-direction: column;
+                gap: 40px;
+                text-align: center
+            }
+
+            .num_content {
+                max-width: none
+            }
+
+            .alliatus_para {
+                text-align: center;
+                padding: 25px
+            }
+
+            .alliatus_content,
+            .card-gap {
+                margin-left: 0
+            }
+
+            .alliatus_people,
+            .alliatus_section,
+            .facilitator_section,
+            .faq_section,
+            .footer_section,
+            .pricing_section,
+            .testimonial_section {
+                margin-top: 75px
+            }
+
+            .alliatus_title,
+            .heading2,
+            .member_text {
+                font-size: 32px
+            }
+
+            .accordion_margin,
+            .alliatus_padding,
+            .facilitator_cards,
+            .price_cards,
+            .you_cards {
+                margin-top: 35px
+            }
+
+            .work_cards {
+                margin-top: 15px
+            }
+
+            .facilitator_name,
+            .work-heading {
+                font-size: 30px
+            }
+
+            .alliatus_images,
+            .work-image {
+                display: none
+            }
+
+            .footer_last,
+            .notyou_tips,
+            .people-image,
+            .works_section {
+                margin-top: 50px
+            }
+
+            .custom-accordion .accordion-item-bg,
+            .work-card {
+                padding: 25px
+            }
+
+            .plan_btn1,
+            .work-image1 {
+                margin-top: 40px
+            }
+
+            .heading1 {
+                margin-top: 20px;
+                font-size: 40px
+            }
+
+            .you_card {
+                padding: 15px;
+                text-align: center;
+                height: 760px
+            }
+
+            .pill-shape {
+                width: 100%
+            }
+
+            .alliatus_mobile,
+            .faq_image {
+                width: 40%;
+                position: absolute
+            }
+
+            .alliatus_mobile {
+                top: 30px;
+                left: 230px
+            }
+
+            .alliatus_mobile2 {
+                top: 220px
+            }
+
+            .testimonial_card {
+                margin-top: 30px;
+                margin-bottom: 0;
+                padding: 25px
+            }
+
+            .footer_card,
+            .footer_content,
+            .price_card {
+                padding: 30px 25px
+            }
+
+            .testimonial_author1,
+            .testimonial_author2 {
+                margin-top: 25px
+            }
+
+            .col-md-6:not(:first-of-type) .you_card,
+            .footer_card,
+            .footer_icons,
+            .footer_text,
+            .plan_items,
+            .price_card,
+            .testimonial_author,
+            .you_tips {
+                margin-top: 30px
+            }
+
+            .facilitator_card {
+                margin-right: 0;
+                margin-top: 30px
+            }
+
+            .faq_heading {
+                font-size: 32px;
+                max-width: 0
+            }
+
+            .col-md-6:not(:first-of-type) .footer_items {
+                margin-top: 20px
+            }
+
+            .faq_image {
+                top: 40px;
+                right: 10px
+            }
+        }
+    </style>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+            <div class="container-fluid">
+                <span class="alliatus_size">alliatus</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="#">How it works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="#">Member stories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-3" href="#">Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn-log ms-3">Log in</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="banner-section">
+            <div class="container-fluid">
+                <div class="banner">
+                    <div class="row">
+                        <div class="col-md-6 order-md-2 order-first">
+                            <img src="website_images/Image1.webp" srcset="website_images/Image1-400.webp 400w"
+                                sizes="(max-width: 600px) 100vw, 564px" class="hero_image" alt="Hero Image" width="564"
+                                height="668" loading="eager" fetchpriority="high">
+                            <!-- <img src="website_images/Image1-360.webp" class="hero_image-mob" alt="Hero_mobimg" width="360" height="427"> -->
+                        </div>
+                        <div class="col-md-6">
+                            <div class="hero_content">
+                                <div class="hero_top">
+                                    <h1 class="hero_heading"><span class="hero_style">Level Up</span> with a Curated
+                                        Mastermind
+                                        Circle
+                                    </h1>
+                                    <div class="row">
+                                        <p class="hero_text col-md-9">Alliatus connects ambitious people into small,
+                                            handpicked
+                                            groups for honest feedback,
+                                            strategy sessions, and real accountability.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="hero_bottom">
+                                    <div class="hero_buttons">
+                                        <button class="btn btn_bg">
+                                            Apply Now
+                                        </button>
+                                        <button class="btn">
+                                            Learn How It Works
+                                        </button>
+                                    </div>
+                                    <div class="rating_content">
+                                        <p class="rating">4.9 <i class="bi bi-star-fill"></i> average rating</p>
+                                        <p class="feedback">Feedback from real members across sessions</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="numbers_section">
+            <div class="container">
+                <div class="list_group">
+                    <div class="item">
+                        <span class="num_item">82%</span>
+                        <p class="num_content">of members say they gained clarity within the first 2 sessions</p>
+                    </div>
+                    <div class="item">
+                        <span class="num_item">93%</span>
+                        <p class="num_content">report feeling more accountable</p>
+                    </div>
+                    <div class="item">
+                        <span class="num_item">6</span>
+                        <p class="num_content">6-person circles. The sweet spot for focused, diverse
+                            conversations.</p>
+                    </div>
+                    <div class="item">
+                        <span class="num_item">1,200+</span>
+                        <p class="num_content">hours of mastermind sessions hosted</p>
+                    </div>
+                    <div class="item">
+                        <span class="num_item">75%</span>
+                        <p class="num_content">return for a second cycle</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="alliatus_section">
+            <div class="container">
+                <div class="alliatus_banner">
+                    <div class="alliatus_heading">
+                        <p class="alliatus_topic">WHAT IS ALLIATUS?</p>
+                        <h1 class="alliatus_title"><span class="alliatus_style">Not</span> Your Typical Networking
+                            Group.
+                        </h1>
+                    </div>
+                    <div class="alliatus_padding">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="website_images/Image2.webp" class="web_meeting" alt="" width="660"
+                                    height="826">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="alliatus_content">
+                                    <p class="alliatus_para">Alliatus is a curated mastermind platform that brings
+                                        together
+                                        motivated individuals
+                                        in small groups for deep conversation, honest feedback, and collective
+                                        accountabilty.
+                                    </p>
+                                    <div class="card_collection">
+                                        <div class="card1">
+                                            <p class="card_heading">SMALL, HANDPICKED CIRCLES</p>
+                                            <p class="card_content">You're matched with 5-6 people who are aligned with
+                                                your
+                                                stage, goals, and mindset</p>
+                                        </div>
+                                        <div class="card1">
+                                            <p class="card_heading">REAL CONVERSATIONS</p>
+                                            <p class="card_content">No fluff. Get feedback, ask for help, and brainstorm
+                                                challenges in structured calls</p>
+                                        </div>
+                                        <div class="card1">
+                                            <p class="card_heading">CONSISTENT GROWTH</p>
+                                            <p class="card_content">Ongoing sessions to help you stay accountable, make
+                                                bold
+                                                moves, and reach goals faster</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="works_section">
+            <div class="container">
+                <div class="alliatus_information">
+                    <p class="work_para">HOW IT WORKS</p>
+                    <h1 class="work-heading">From Application to Transformation — <br><span class="step-style">Step by
+                            Step</span>
+                    </h1>
+                    <div class="alliatus_mobile d-md-none">
+                        <img src="website_images/work_star1.webp" alt="" width="598" height="598" loading="lazy">
+                    </div>
+                    <div class="work_cards">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="work-card card-bg">
+                                    <div class="card-number">
+                                        <span class="num-text">01</span>
+                                        <span class="card-topic">APPLY ONLINE</span>
+                                    </div>
+                                    <p class="card-desc">Tell us about your goals, background, and what kind of
+                                        support
+                                        you're seeking</p>
+                                </div>
+
+                                <div class="work-image">
+                                    <img src="website_images/Image3.webp" class="work-videocalling" alt="" width="427"
+                                        height="560" loading="lazy">
+                                </div>
+                            </div>
+                            <div class="alliatus_mobile alliatus_mobile2 d-md-none">
+                                <img src="website_images/work_star2.webp" alt="" width="249" height="249">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="work-card card-bg1">
+                                            <div class="card-number">
+                                                <span class="num-text">02</span>
+                                                <span class="card-topic">GET MATCHED</span>
+                                            </div>
+                                            <p class="card-desc">We carefully place you in a mastermind circle of 5-6
+                                                aligned members</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="work-card card-bg2">
+                                            <div class="card-number">
+                                                <span class="num-text">03</span>
+                                                <span class="card-topic">JOIN BI-WEEKLY SESSIONS</span>
+                                            </div>
+                                            <p class="card-desc">Meet over Zoom for structured, focused
+                                                conversations
+                                                led by a trained
+                                                host.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="work-card1 card-bg1 work-card">
+                                            <div class="card-number">
+                                                <span class="num-text">04</span>
+                                                <span class="card-topic">GROW WITH ACCOUNTABILITY</span>
+                                            </div>
+                                            <p class="card-desc">Set goals, stay on track, and get continuous
+                                                feedback
+                                                from your circle.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="work-image1 d-md-none">
+                                            <img src="website_images/Image3.webp" class="work-videocalling" alt=""
+                                                width="427" height="560" loading="lazy">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="work-card">
+                                            <p class="include-style">WHAT'S INCLUDED</p>
+                                            <div class="include-content">
+                                                Private online community <span class="bullet"></span> Goal-tracking
+                                                and reflection tools <span class="bullet"></span>
+                                                Access to session recordings(optional for privacy) <span
+                                                    class="bullet"></span> Session prep templates & prompts
+                                                <span class="bullet"></span>Library of expert resources
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="alliatus_images">
+                    <img src="website_images/work_stars.webp" class="star_image" alt="" width="598" height="779"
+                        loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <div class="alliatus_people">
+            <div class="container">
+                <div class="people_text">
+                    <p class="for_style">WHO IT'S FOR</p>
+                    <h1 class="heading1">Made for People <span class="heading1_style">Like You</span></h1>
+                </div>
+                <div class="you_cards">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="you_card card-bg">
+                                <h2 class="heading2">This <span class="heading1_style">Is for You</span> If...</h2>
+                                <div class="you_tips">
+                                    <p class="pill-shape">You're an <span class="fw-bold">entrepreneur,
+                                            solopreneur,</span>
+                                        or <span class="fw-bold">freelancer</span></p>
+                                    <p class="pill-shape">You crave honest <span class="fw-bold">feedback</span> and
+                                        outside
+                                        perspective</p>
+                                    <p class="pill-shape">You want to <span class="fw-bold">help others</span> while
+                                        <span class="fw-bold">evolving yourself</span></p>
+                                    <p class="pill-shape">You value <span class="fw-bold">real conversations</span> over
+                                        shallow networking</p>
+                                </div>
+                                <img src="website_images/Image4.webp" class="people-image" alt="" width="628"
+                                    height="467" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-gap">
+                                <div class="you_card">
+                                    <h2 class="heading2">This Is <span class="heading1_style">Not for You</span> If...
+                                    </h2>
+                                    <img src="website_images/Image5.webp" class="image_style" alt="" width="628"
+                                        height="468" loading="lazy">
+                                    <div class="notyou_tips">
+                                        <p class="pill-shape">You're just looking to promote your business</p>
+                                        <p class="pill-shape">You can't commit to regular attendance</p>
+                                        <p class="pill-shape">You're not open to giving or receiving feedback</p>
+                                        <p class="pill-shape">You prefer passive learning to active participation</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <span class="testimonial_text">TESTIMONIALS</span>
+                        <h1 class="member_text">What Our Members <span class="heading1_style">Are Saying</span></h1>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial_card">
+                            <p class="testimonial_text1">“I joined on a whim, but it’s become a constant in my growth.
+                                Everyone brings such honest
+                                energy —
+                                I leave every session clearer and more focused.”
+                            </p>
+                            <p class="testimonial_author testimonial_text1">— Taylor B. / Creative Coach</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="testimonial_card">
+                            <p class="testimonial_text1">“It’s rare to find a space that’s this structured and this
+                                human.
+                                I’ve made more progress in 3 months than I had in a year alone.”
+                            </p>
+                            <p class="testimonial_text1 testimonial_author1">— Samir R. / Indie Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gx-4">
+                    <div class="col-md-4">
+                        <div class="testimonial_card">
+                            <p class="testimonial_text1">“The feedback is gold. Supportive, but not sugarcoated.
+                                I always feel seen and challenged in the best way.”
+                            </p>
+                            <p class="testimonial_text1 testimonial_author2">— Renee L. / Marketing Strategist</p>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="testimonial_card">
+                            <p class="testimonial_text1">“I used to overthink every move in my business. Now I have a
+                                circle
+                                that
+                                keeps me grounded, focused, and—honestly—excited to show up.”
+                            </p>
+                            <p class="testimonial_author1 testimonial_text1">— Alex M. / Wellness Entrepreneur</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="testimonial_card">
+                            <p class="testimonial_text1">“This isn’t just another online group — it feels like a team.
+                                The
+                                accountability
+                                and support have helped me stay consistent like never before.”
+                            </p>
+                            <p class="testimonial_text1 testimonial_author1">— Jordan K. / Freelance Illustrator</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="facilitator_section">
+            <div class="container">
+                <div class="host_content">
+                    <p>YOUR HOSTS & GUIDES</p>
+                    <h1 class="heading1">Meet Your <span class="heading1_style">Facilitators</span></h1>
+                </div>
+                <div class="facilitator_cards">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="facilitator_card">
+                                <img src="website_images/Amira.webp" alt="" width="310" height="310" loading="lazy">
+                                <div class="card1_content">
+                                    <h2 class="facilitator_name">Amira Sullivan</h2>
+                                    <p class="facilitator_designation">CREATIVE STRATEGIST & GROUP FACILITATOR</p>
+                                    <p class="facilitator_content">With over a decade of guiding creative professionals,
+                                        Amira
+                                        brings
+                                        clarity, structure, and a spark of inspiration to every session.</p>
+                                    <div class="linkedin-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                            height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="facilitator_card">
+                                <img src="website_images/Lucas.webp" alt="" width="310" height="310" loading="lazy">
+                                <div class="card1_content">
+                                    <h2 class="facilitator_name">Lucas Varela</h2>
+                                    <p class="facilitator_designation">ACCOUNTABILITY COACH & SOLOPRENEUR</p>
+                                    <p class="facilitator_content">Lucas helps members stay focused and follow through
+                                        with
+                                        intention.
+                                        His calm energy and practical tools make progress feel possible.
+                                    </p>
+                                    <div class="linkedin-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="facilitator_card">
+                                <img src="website_images/Elena.webp" alt="" width="310" height="310" loading="lazy">
+                                <div class="card1_content">
+                                    <h2 class="facilitator_name">Elena Morozova</h2>
+                                    <p class="facilitator_designation">MINDSET COACH & COMMUNITY BUILDER</p>
+                                    <p class="facilitator_content">Elena supports members through thoughtful reflection
+                                        and
+                                        honest conversation.
+                                        Her strength lies in helping people see the bigger picture.
+                                    </p>
+                                    <div class="linkedin-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="facilitator_card">
+                                <img src="website_images/Jason.webp" alt="" width="310" height="310" loading="lazy">
+                                <div class="card1_content">
+                                    <h2 class="facilitator_name">Jason Kim</h2>
+                                    <p class="facilitator_designation">STARTUP MENTOR & STRATEGIC THINKER</p>
+                                    <p class="facilitator_content">With a background in tech and coaching, Jason brings
+                                        sharp
+                                        insight and a deep
+                                        belief in peer-led growth. He’s known for asking just the right questions.
+                                    </p>
+                                    <div class="linkedin-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="pricing_section">
+            <div class="container">
+                <div class="price_plans">
+                    <p>PRICING</p>
+                    <h1 class="heading1"><span class="heading1_style">Plans</span> That Fit You</h1>
+                </div>
+                <div class="price_cards">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="price_card">
+                                <div class="plan_content">
+                                    <h2 class="card-title">Starter</h2>
+                                    <p class="card-text">PERFECT FOR TRYING THINGS OUT</p>
+                                    <div class="currency">
+                                        <span class="currency_style"><i class="bi bi-currency-euro"></i>49</span>
+                                        <span class="currency_text">/mo</span>
+                                    </div>
+                                </div>
+                                <div class="plan_items">
+                                    <p class="plan_text">2 group sessions/month</p>
+                                    <p class="mt-3 plan_text">Community access</p>
+                                    <p class="mt-3 plan_text">Session summaries</p>
+                                    <p class="mt-3 plan_text">Private messaging</p>
+                                </div>
+                                <div>
+                                    <button class="btn btn_bg">Join Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="price_card">
+                                <div class="plan_content">
+                                    <h2 class="card-title">Growth</h2>
+                                    <p class="card-text">OUR MOST POPULAR MEMBERSHIP</p>
+                                    <div class="currency">
+                                        <span class="currency_style"><i class="bi bi-currency-euro"></i>89</span><span
+                                            class="currency_text">/mo</span>
+                                    </div>
+                                </div>
+                                <div class="plan_items">
+                                    <p class="plan_text">Weekly group sessions</p>
+                                    <p class="mt-3 plan_text">Goal-tracking tools</p>
+                                    <p class="mt-3 plan_text">Full community access</p>
+                                    <p class="mt-3 plan_text">Access to recordings</p>
+                                    <p class="mt-3 plan_text">Priority support</p>
+                                </div>
+                                <div>
+                                    <button class="btn btn_bg">Start Growing</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="price_card">
+                                <div class="plan_content">
+                                    <h2 class="card-title">Circle+</h2>
+                                    <p class="card-text">FOR FULL SUPPORT & 1:1 COACHING</p>
+                                    <div class="currency">
+                                        <span class="currency_style"><i class="bi bi-currency-euro"></i>149</span><span
+                                            class="currency_text">/mo</span>
+                                    </div>
+                                </div>
+                                <div class="plan_items">
+                                    <p class="plan_text">Everything in Growth</p>
+                                    <p class="mt-3 plan_text">Monthly 1:1 coaching</p>
+                                    <p class="mt-3 plan_text">Personalized session recaps</p>
+                                    <p class="mt-3 plan_text">VIP Q&A calls</p>
+                                    <p class="mt-3 plan_text">Early event access</p>
+                                </div>
+                                <div>
+                                    <button class="btn btn_bg">Join Circle+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq_section">
+                <div class="container">
+                    <div class="faq_text">
+                        <p>NEED MORE INFO?</p>
+                        <h1 class="faq_heading">Frequently Asked <span class="heading1_style">Questions</span></h1>
+                    </div>
+                    <div class="accordion_margin">
+                        <div id="faqAccordion">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="accordion custom-accordion">
+                                        <div class="accordion-item accordion-item-bg">
+                                            <h2 class="accordion-header" id="headingOne">
+                                                <button class="accordion-button accordion-btn-pad" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                    aria-expanded="true" aria-controls="collapseOne">
+                                                    HOW DO THE GROUP SESSIONS WORK?
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                                aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                                                <div class="accordion-body accordion-gap">
+                                                    <p>Each session takes place on Zoom and follows a guided structure,
+                                                        including check-ins, goal sharing, and peer feedback. You'll
+                                                        always know what to expect.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="accordion custom-accordion">
+                                        <div class="accordion-item accordion-item-bg">
+                                            <h2 class="accordion-header" id="headingTwo">
+                                                <button class="accordion-button accordion-btn-pad collapsed"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseTwo" aria-expanded="false"
+                                                    aria-controls="collapseTwo">
+                                                    CAN I JOIN FROM ANYWHERE?
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                                aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                                                <div class="accordion-body accordion-gap">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Sit dolor architecto, quam consequatur laborum incidunt
+                                                        quo quis nulla. Magni nam mollitia reiciendis ducimus neque!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="accordion custom-accordion">
+                                        <div class="accordion-item accordion-item-bg">
+                                            <h2 class="accordion-header" id="headingThree">
+                                                <button class="accordion-button accordion-btn-pad collapsed"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseThree" aria-expanded="false"
+                                                    aria-controls="collapseThree">
+                                                    IS THERE A LONG-TERM COMMITMENT?
+                                                </button>
+                                            </h2>
+                                            <div id="collapseThree" class="accordion-collapse collapse"
+                                                aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                                                <div class="accordion-body accordion-gap">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Maxime, velit ab reiciendis eligendi sit tempora deserunt nisi
+                                                        vitae,
+                                                        officiis adipisci maiores. Sapiente, nesciunt odit?
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="accordion custom-accordion">
+                                        <div class="accordion-item accordion-item-bg">
+                                            <h2 class="accordion-header" id="headingFour">
+                                                <button class="accordion-button accordion-btn-pad collapsed"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseFour" aria-expanded="false"
+                                                    aria-controls="collapseFour">
+                                                    WHAT IF I CAN'T MAKE A LIVE SESSION?
+                                                </button>
+                                            </h2>
+                                            <div id="collapseFour" class="accordion-collapse collapse"
+                                                aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                                                <div class="accordion-body accordion-gap">
+                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Non quibusdam beatae modi nisi. Labore doloremque quas similique
+                                                        hic odit quos tenetur ipsum non corrupti.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="accordion custom-accordion">
+                                        <div class="accordion-item accordion-item-bg">
+                                            <h2 class="accordion-header" id="headingFive">
+                                                <button class="accordion-button accordion-btn-pad collapsed"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseFive" aria-expanded="false"
+                                                    aria-controls="collapseFive">
+                                                    WHO ARE THE OTHER MEMBERS?
+                                                </button>
+                                            </h2>
+                                            <div id="collapseFive" class="accordion-collapse collapse"
+                                                aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                                                <div class="accordion-body accordion-gap">
+                                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                                        Eveniet aperiam modi officiis explicabo, sint error cupiditate
+                                                        quasi, sequi reiciendis, assumenda magnam facilis quas.
+                                                        Reiciendis!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="website_images/faq_image.webp" class="faq_image" alt="" loading="lazy">
+                </div>
+            </div>
+    </main>
+
+
+    <footer class="footer_section">
+        <div class="container-fluid">
+            <div class="footer_content">
+                <h1 class="alliatus_footer">alliatus</h1>
+                <div class="footer_text">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="footer_items">
+                                        <li>Home</li>
+                                        <li>About</li>
+                                        <li>How It Works</li>
+                                        <li>Member Stories</li>
+                                        <li>Events</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="footer_items">
+                                        <li>FAQ</li>
+                                        <li>Contact</li>
+                                        <li>Privacy Policy</li>
+                                        <li>Terms of Service</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer_icons">
+                                <span class="icon_bg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                                    </svg>
+                                </span>
+                                <span class="icon_bg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                                    </svg>
+                                </span>
+                                <span class="icon_bg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-messenger" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.64.64 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.64.64 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76m5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z" />
+                                    </svg>
+                                </span>
+                                <span class="icon_bg"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="footer_last">
+                                <p class="text_style">&copy; 2025 Alliatus. All rights reserved.</p>
+                                <p class="text_style">Powered by connection, clarity, and community.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="footer_card">
+                                <h2 class="footer_heading">
+                                    Let's Get <span class="heading1_style">Started!</span>
+                                </h2>
+                                <div class="footer_text1">
+                                    <p class="footer_para1">Join a supportive circle of minds and start growing with
+                                        intention.</p>
+                                    <p class="footer_para1 footer_para2">There's a seat at the table waiting for
+                                        you.
+                                    </p>
+                                </div>
+                                <div class="footer_btn">
+                                    <button class="btn btn_bg">Join Alliatus</button>
+                                </div>
+                                <img src="website_images/Footer_img.webp" class="footer_img" alt="" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+        defer>
+    </script>
+</body>
+
+</html>

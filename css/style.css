@@ -1,0 +1,842 @@
+.pill-shape:last-child,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ul li:last-child {
+    margin-bottom: 0;
+}
+
+.card_collection,
+.hero_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-position,
+.work_cards,
+.works_section {
+    position: relative;
+}
+
+.alliatus_heading,
+.host_content,
+.people_text,
+.price_card,
+.price_plans {
+    text-align: center;
+}
+
+.currency_style,
+.feedback,
+.heading1_style,
+.num-text,
+.step-style {
+    font-style: italic;
+}
+
+.custom-accordion .accordion-header .accordion-btn-pad,
+body {
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+}
+
+p {
+    font-size: 16px;
+    font-family: "Work Sans";
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.alliatus_size {
+    font-family: "Playfair Display", serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.btn,
+.navbar-nav .nav-item {
+    font-family: "Work Sans";
+    font-size: 20px;
+}
+
+.navbar-nav .nav-item {
+    line-height: 30px;
+    color: #303030;
+}
+
+.btn:hover,
+.btn_bg {
+    color: #fff;
+}
+
+.btn {
+    border: 1px solid #49342f;
+    border-radius: 12px;
+    padding: 19px 40px;
+}
+
+.btn-log {
+    border-radius: 12px;
+    border: 1px solid #49342f;
+    padding: 14px 43px;
+    background-color: #fff;
+}
+
+.custom-navbar {
+    padding: 20px 50px;
+}
+
+.banner-section {
+    margin-top: 25px;
+    padding: 0 50px;
+}
+
+.banner {
+    border: 1px solid #83838340;
+    border-radius: 40px;
+    background-color: #ffdd81;
+    padding: 75px 50px 50px;
+}
+
+.hero_heading {
+    font-family: "Playfair Display", serif;
+    font-size: 64px;
+    padding-top: 50px;
+    font-weight: 400;
+}
+
+.alliatus_style,
+.hero_style {
+    font-weight: 800;
+    font-style: italic;
+}
+
+.hero_text {
+    font-family: "Work Sans";
+    font-size: 22px;
+    line-height: 30px;
+    padding-top: 50px;
+}
+
+.hero_buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn_bg {
+    background-color: #303030;
+}
+
+.card1,
+.work-card {
+    background-color: #fff;
+}
+
+.hero_content {
+    height: 100%;
+    justify-content: space-between;
+}
+
+.rating_content {
+    margin-top: 35px;
+    font-family: "Work Sans";
+    font-size: 16px;
+}
+
+.rating {
+    font-weight: 600;
+}
+
+.card-include,
+.card-session,
+.numbers_section,
+.work-image {
+    margin-top: 40px;
+}
+
+.list_group {
+    display: flex;
+    gap: 80px;
+    border: 1px solid #49342f;
+    padding: 24px 50px;
+    border-radius: 24px;
+}
+
+.num_item {
+    font-family: "PlayFair Display", serif;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.num_content {
+    font-family: "Work Sans";
+    padding-top: 8px;
+    max-width: 188px;
+}
+
+.alliatus_para,
+.alliatus_title,
+.alliatus_topic {
+    font-family: "PlayFair Display", serif;
+}
+
+.alliatus_title,
+.work-heading {
+    max-width: 648px;
+    font-weight: 400;
+}
+
+.alliatus_people,
+.alliatus_section,
+.facilitator_section,
+.pricing_section,
+.testimonial_section {
+    margin-top: 150px;
+}
+
+.alliatus_topic {
+    font-size: 10px;
+    padding-bottom: 20px;
+}
+
+.alliatus_title {
+    font-size: 64px;
+    margin: 0 auto;
+}
+
+.accordion_margin,
+.alliatus_padding,
+.facilitator_cards,
+.price_cards,
+.you_cards {
+    margin-top: 70px;
+}
+
+.alliatus_content {
+    margin-left: 16px;
+}
+
+.alliatus_para {
+    font-size: 19px;
+    padding: 50px;
+}
+
+.card_heading,
+.for_style,
+.include-style,
+.testimonial_text,
+.work_para {
+    font-family: "Work Sans";
+}
+
+.card_collection {
+    gap: 20px;
+}
+
+.card1 {
+    border: 1px solid #fff;
+    border-radius: 24px;
+    padding: 50px;
+}
+
+.card_heading {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card_content {
+    padding-top: 22px;
+}
+
+.works_section {
+    margin-top: 115px;
+}
+
+.alliatus_information {
+    padding-top: 15px;
+}
+
+.num-text,
+.work-heading {
+    font-family: "PlayFair Display", serif;
+}
+
+.work-heading {
+    margin-top: 20px;
+    font-size: 64px;
+}
+
+.heading1_style,
+.step-style {
+    font-weight: 800;
+}
+
+.work_cards {
+    margin-top: 70px;
+}
+
+.work-card {
+    border: 1px solid #fff;
+    border-radius: 24px;
+    padding: 40px;
+    margin-top: 40px;
+}
+
+.card-bg,
+.price_card:hover {
+    background-color: #ffdd81;
+}
+
+.work-card1 {
+    padding: 40px;
+    border-radius: 24px;
+}
+
+.card-bg1 {
+    background-color: #fff;
+}
+
+.card-bg2 {
+    background-color: #f7f7f7;
+    border: 1px solid #303030;
+}
+
+.num-text {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.card-topic {
+    font-family: "Work Sans";
+    padding-left: 15px;
+}
+
+.card-desc {
+    max-width: 347px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.include-content {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.bullet {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #303030;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.pill-shape,
+.price_card,
+.testimonial_card {
+    background-color: #fff;
+}
+
+.alliatus_images {
+    position: absolute;
+    top: 5px;
+    right: 150px;
+}
+
+.work-videocalling {
+    max-height: 510px;
+}
+
+.heading1 {
+    font-family: "PlayFair Display", serif;
+    font-size: 64px;
+    max-width: 562px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+.heading2,
+.member_text {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+}
+
+.you_card {
+    border: 1px solid #49342f;
+    border-radius: 40px;
+    padding: 60px;
+    height: 924px;
+}
+
+.heading2 {
+    font-size: 40px;
+}
+
+.you_tips {
+    margin-top: 60px;
+}
+
+.image_style {
+    margin-top: 9px;
+}
+
+.card1_content,
+.footer_btn,
+.notyou_tips {
+    margin-top: 30px;
+}
+
+.pill-shape {
+    border: 1px solid #000;
+    border-radius: 100px;
+    padding: 14px 24px;
+    width: 85%;
+    margin-bottom: 12px;
+}
+
+.footer_icons,
+.people-image,
+.testimonial_author {
+    margin-top: 50px;
+}
+
+.member_text {
+    font-size: 64px;
+    margin-top: 23px;
+}
+
+.testimonial_card {
+    border-radius: 24px;
+    padding: 40px;
+    border: 1px solid;
+    margin-top: 24px;
+}
+
+.testimonial_text1 {
+    font-size: 18px;
+    line-height: 27px;
+    font-family: "Work Sans";
+}
+
+.testimonial_author1 {
+    margin-top: 77px;
+}
+
+.testimonial_author2 {
+    margin-top: 104px;
+}
+
+.card-title,
+.facilitator_name {
+    font-weight: 400;
+    font-size: 40px;
+    font-family: "PlayFair Display", serif;
+}
+
+.facilitator_designation,
+.footer_text1,
+.linkedin-icon {
+    margin-top: 20px;
+}
+
+.facilitator_content {
+    margin-top: 25px;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.facilitator_cards > .facilitator_card:last-child,
+.footer_icons .icon_bg:last-child {
+    margin-right: 0;
+}
+
+.price_card {
+    border-radius: 40px;
+    padding: 55px 45px 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.price_card:hover {
+    cursor: pointer;
+}
+
+.card-text {
+    margin-top: 10px;
+}
+
+.currency {
+    margin-top: 5px;
+    font-family: "PlayFair Display", serif;
+}
+
+.currency_style {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.currency_text {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.plan_items {
+    font-family: "Work Sans";
+    margin-top: 10px;
+    margin-bottom: 30px;
+    min-height: 200px;
+}
+
+.alliatus_footer,
+.faq_heading,
+.footer_heading {
+    font-family: "PlayFair Display", serif;
+}
+
+.footer_para1,
+.plan_text {
+    font-size: 18px;
+}
+
+.faq_section {
+    margin-top: 150px;
+    position: relative;
+}
+
+.faq_heading {
+    font-size: 64px;
+    margin-top: 20px;
+    font-weight: 400;
+    max-width: 502px;
+}
+
+.custom-accordion .accordion-btn-pad:focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    color: unset;
+    background-color: unset;
+    box-shadow: unset;
+}
+
+.custom-accordion .accordion-item-bg:has(.accordion-collapse.show) {
+    background-color: #ffdd81;
+}
+
+.custom-accordion .accordion-item-bg {
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    border-radius: 24px;
+    padding: 40px 50px;
+}
+
+.custom-accordion .accordion-gap {
+    padding: 25px 0 0;
+    font-size: 18px;
+    line-height: 27px;
+    max-width: 506px;
+}
+
+.custom-accordion .accordion-btn-pad::after {
+    background-image: url("http://localhost/Alliatus-LandingPage/website_images/accordion_btn.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(0);
+    width: 24px;
+    height: 24px;
+    content: "";
+    transition: transform 0.3s ease-in-out;
+}
+
+.custom-accordion .accordion-btn-pad:not(.collapsed)::after {
+    transform: rotate(0);
+}
+
+.custom-accordion .accordion-btn-pad.collapsed::after {
+    transform: rotate(180deg) !important;
+}
+
+.faq_image {
+    width: 40%;
+    position: absolute;
+    top: -5px;
+    right: 100px;
+    z-index: -1;
+}
+
+.footer_section {
+    margin-top: 100px;
+    color: #fff;
+    padding: 0 50px;
+}
+
+.footer_content {
+    border-radius: 40px;
+    border: 1px solid #000;
+    background-color: #000;
+    padding: 60px 50px;
+}
+
+.alliatus_footer {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.footer_items {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer_text {
+    margin-top: 49px;
+}
+
+.footer_items > li {
+    margin-bottom: 20px;
+}
+
+.footer_icons .icon_bg {
+    display: inline-block;
+    margin-right: 20px;
+    color: #ffdd81;
+    width: 24px;
+    height: 24px;
+}
+
+.footer_last {
+    margin-top: 74px;
+}
+
+.text_style {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.footer_card {
+    border-radius: 24px;
+    color: #000;
+    background-color: #ffdd81;
+    padding: 60px 50px;
+    position: relative;
+}
+
+.footer_heading {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.footer_para2 {
+    padding-top: 30px;
+}
+
+.footer_img {
+    width: 30%;
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .custom-navbar {
+        padding: 20px 15px;
+    }
+
+    .hero_heading {
+        font-size: 40px;
+        font-family: "Playfair Display";
+    }
+
+    .hero_image {
+        width: 325px;
+        height: 385px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .banner-section,
+    .footer_section {
+        padding: 0;
+    }
+
+    .banner {
+        padding: 40px 20px 20px;
+    }
+
+    .hero_bottom {
+        margin-top: 70px;
+    }
+
+    .btn {
+        font-size: 20px;
+        height: 50px;
+        padding: 10px;
+    }
+
+    .list_group {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .num_content {
+        max-width: none;
+    }
+
+    .alliatus_para {
+        text-align: center;
+        padding: 25px;
+    }
+
+    .alliatus_content,
+    .card-gap {
+        margin-left: 0;
+    }
+
+    .alliatus_people,
+    .alliatus_section,
+    .facilitator_section,
+    .faq_section,
+    .footer_section,
+    .pricing_section,
+    .testimonial_section {
+        margin-top: 75px;
+    }
+
+    .alliatus_title,
+    .heading2,
+    .member_text {
+        font-size: 32px;
+    }
+
+    .accordion_margin,
+    .alliatus_padding,
+    .facilitator_cards,
+    .price_cards,
+    .you_cards {
+        margin-top: 35px;
+    }
+
+    .work_cards {
+        margin-top: 15px;
+    }
+
+    .facilitator_name,
+    .work-heading {
+        font-size: 30px;
+    }
+
+    .alliatus_images,
+    .work-image {
+        display: none;
+    }
+
+    .footer_last,
+    .notyou_tips,
+    .people-image,
+    .works_section {
+        margin-top: 50px;
+    }
+
+    .custom-accordion .accordion-item-bg,
+    .work-card {
+        padding: 25px;
+    }
+
+    .plan_btn1,
+    .work-image1 {
+        margin-top: 40px;
+    }
+
+    .heading1 {
+        margin-top: 20px;
+        font-size: 40px;
+    }
+
+    .you_card {
+        padding: 15px;
+        text-align: center;
+        height: 760px;
+    }
+
+    .pill-shape {
+        width: 100%;
+    }
+
+    .alliatus_mobile,
+    .faq_image {
+        width: 40%;
+        position: absolute;
+    }
+
+    .alliatus_mobile {
+        top: 30px;
+        left: 230px;
+    }
+
+    .alliatus_mobile2 {
+        top: 220px;
+    }
+
+    .testimonial_card {
+        margin-top: 30px;
+        margin-bottom: 0;
+        padding: 25px;
+    }
+
+    .footer_card,
+    .footer_content,
+    .price_card {
+        padding: 30px 25px;
+    }
+
+    .testimonial_author1,
+    .testimonial_author2 {
+        margin-top: 25px;
+    }
+
+    .col-md-6:not(:first-of-type) .you_card,
+    .footer_card,
+    .footer_icons,
+    .footer_text,
+    .plan_items,
+    .price_card,
+    .testimonial_author,
+    .you_tips {
+        margin-top: 30px;
+    }
+
+    .facilitator_card {
+        margin-right: 0;
+        margin-top: 30px;
+    }
+
+    .faq_heading {
+        font-size: 32px;
+        max-width: 0;
+    }
+
+    .col-md-6:not(:first-of-type) .footer_items {
+        margin-top: 20px;
+    }
+
+    .faq_image {
+        top: 40px;
+        right: 10px;
+    }
+}
